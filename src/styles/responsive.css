@@ -1,0 +1,149 @@
+@media (max-width: 720px) {
+  :root {
+    --header-height: 4.75rem;
+  }
+
+  .site-nav li:nth-child(2),
+  .site-nav li:nth-child(3) {
+    display: none;
+  }
+
+  .hero {
+    min-height: max(39rem, 100svh);
+  }
+
+  .hero-center {
+    margin-top: -1rem;
+  }
+
+  .hero-title {
+    justify-content: flex-start;
+    font-size: clamp(3.2rem, 17.2vw, 7.3rem);
+    letter-spacing: -0.095em;
+  }
+
+  .hero-tagline {
+    text-align: left;
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr;
+    width: 15rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-meta div {
+    grid-template-columns: 4.4rem 1fr;
+  }
+
+  .explore-cue {
+    right: auto;
+    left: var(--page-gutter);
+  }
+
+  .section-shell {
+    min-height: 70svh;
+  }
+
+  .section-heading {
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .section-aside {
+    display: none;
+  }
+
+  .section-body {
+    display: block;
+    margin-top: clamp(5.5rem, 15vh, 9rem);
+  }
+
+  .section-statement {
+    max-width: 13ch;
+    font-size: clamp(2.65rem, 12vw, 5rem);
+  }
+
+  .project-index {
+    margin-top: 4rem;
+  }
+
+  .project-index li {
+    grid-template-columns: 2.25rem 1fr auto;
+    min-height: 4.5rem;
+  }
+
+  .project-note {
+    display: none;
+  }
+
+  .project-domain {
+    max-width: 8.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .contact-section .section-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  .contact-links a {
+    width: 100%;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr auto;
+    gap: 0.8rem;
+  }
+
+  .site-footer p:nth-child(2) {
+    display: none;
+  }
+
+  .site-footer p:last-child {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 16.6vw;
+  }
+
+  .site-nav {
+    gap: 1rem;
+  }
+
+  .project-domain {
+    max-width: 6.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-atmosphere {
+    display: none;
+  }
+}
+
