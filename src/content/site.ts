@@ -85,6 +85,7 @@ export const siteContent: SiteContent = {
   socialLinks: [
     { label: 'GitHub', href: 'https://github.com/KuzeyGorgulu' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kuzeygorgulu' },
+    { label: 'Email', href: 'mailto:hello@qzeybei.com' },
   ],
   projects: [
     {
@@ -93,7 +94,8 @@ export const siteContent: SiteContent = {
       tagline: 'Measure motion. From video.',
       description:
         'A local-first workspace for extracting real measurements from ordinary video—turning frames into trajectories, angles, and useful physics.',
-      status: 'Open source',
+      status: 'Live',
+      url: 'https://motionlab.qzeybei.com',
       githubUrl: 'https://github.com/KuzeyGorgulu/motionlab',
       visual: 'motion',
     },
@@ -103,7 +105,9 @@ export const siteContent: SiteContent = {
       tagline: 'Generate cities from a seed.',
       description:
         'A procedural sandbox that turns a single seed into streets, blocks, and a different urban system every time.',
-      status: 'Experimental',
+      status: 'Live / Experimental',
+      url: 'https://city.qzeybei.com',
+      githubUrl: 'https://github.com/KuzeyGorgulu/procedural-city-generator',
       visual: 'city',
     },
     {
@@ -113,6 +117,8 @@ export const siteContent: SiteContent = {
       description:
         'A deliberately fast shared attendance tracker for the people you train with. Less logging, more showing up.',
       status: 'Building',
+      url: 'https://gym-party.qzeybei.com',
+      githubUrl: 'https://github.com/KuzeyGorgulu/gym-party',
       visual: 'gym',
     },
     {
@@ -121,7 +127,7 @@ export const siteContent: SiteContent = {
       tagline: 'A second brain in progress.',
       description:
         'An evolving system for collecting ideas, connecting context, and turning unfinished thoughts into useful next actions.',
-      status: 'In progress / Not public',
+      status: 'In progress',
       visual: 'q-system',
     },
   ],
@@ -136,7 +142,7 @@ export const siteContent: SiteContent = {
   },
   about: {
     statement:
-      'I’m Kuzey—a student and builder exploring software, simulations, AI, and physics. Most things here start with curiosity and the need to make an idea real.',
+      'I’m Kuzey—a student and builder exploring software, simulations, AI, and physics through useful products shaped by curiosity.',
     details: ['TOBB ETÜ', 'Materials Science', 'Independent builder'],
   },
   experiments: {
@@ -144,26 +150,26 @@ export const siteContent: SiteContent = {
     items: [
       {
         category: 'Physics',
-        title: 'Trajectory notebooks',
-        detail: 'Small tools for turning video and sensor data into physical measurements.',
-        status: 'Ongoing',
+        title: 'Motion studies',
+        detail: 'Ways to make movement measurable.',
+        status: 'Study',
       },
       {
-        category: 'Generative systems',
-        title: 'Seed studies',
-        detail: 'Rules, noise, and repeatable randomness for synthetic places.',
-        status: 'Iteration 06',
-      },
-      {
-        category: 'Applied AI',
-        title: 'Memory prototypes',
-        detail: 'Experiments in context that stays useful instead of merely accumulating.',
+        category: 'Generative',
+        title: 'Seeded systems',
+        detail: 'Experiments with deterministic worlds and emergent structure.',
         status: 'Notebook',
       },
       {
+        category: 'AI',
+        title: 'Useful memory',
+        detail: 'Experiments around context, memory, retrieval, and personal AI systems.',
+        status: 'Research',
+      },
+      {
         category: 'Interface',
-        title: 'One-purpose software',
-        detail: 'Quiet interactions tested against a single real task.',
+        title: 'Quiet software',
+        detail: 'Interfaces that disappear into the task.',
         status: 'Study',
       },
     ],

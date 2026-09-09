@@ -13,6 +13,7 @@ export function usePointerField<T extends HTMLElement>(): RefObject<T | null> {
     let frame = 0
 
     const updatePointer = (event: PointerEvent) => {
+      if (event.pointerType !== 'mouse') return
       if (frame) cancelAnimationFrame(frame)
 
       frame = requestAnimationFrame(() => {
@@ -42,4 +43,3 @@ export function usePointerField<T extends HTMLElement>(): RefObject<T | null> {
 
   return elementRef
 }
-

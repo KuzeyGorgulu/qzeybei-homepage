@@ -10,11 +10,9 @@
   --color-dim: #7b7b75;
   --color-line: rgba(240, 239, 233, 0.15);
   --color-surface: #10100e;
-  --color-surface-raised: #151512;
   --page-gutter: clamp(1.25rem, 3.3vw, 4rem);
   --header-height: 5.5rem;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 body {

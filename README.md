@@ -11,4 +11,4 @@ npm run dev
 
 Personal copy, links, project status, and section metadata live in `src/content/site.ts`.
 
-All brand presentations use the official `public/brand/qzeybei-logo.png` asset through the reusable crop wrappers in `src/components/BrandMark.tsx`.
+All in-page brand presentations use the official `public/brand/qzeybei-logo.png` asset through the reusable crop wrappers in `src/components/BrandMark.tsx`. The browser icons in `public/brand` are faithful Q-only crops derived from that same source.
