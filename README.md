@@ -1,6 +1,6 @@
 # Qzeybei homepage
 
-Phase 1 of the personal hub at `qzeybei.com`: a restrained homepage shell, content model, responsive layout, and motion foundation.
+A brand-led personal hub at `qzeybei.com`: projects, current work, experiments, and a restrained Q-derived motion system.
 
 ## Local development
 
@@ -9,5 +9,6 @@ npm install
 npm run dev
 ```
 
-Personal copy, links, current status, and future-project metadata live in `src/content/site.ts`.
+Personal copy, links, project status, and section metadata live in `src/content/site.ts`.
 
+All brand presentations use the official `public/brand/qzeybei-logo.png` asset through the reusable crop wrappers in `src/components/BrandMark.tsx`.

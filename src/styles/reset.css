@@ -13,6 +13,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: clip;
 }
 
 button,
@@ -40,8 +41,11 @@ ol {
   list-style: none;
 }
 
+svg {
+  display: block;
+}
+
 ::selection {
   color: var(--color-ink);
   background: var(--color-paper);
 }
-

@@ -7,11 +7,10 @@ type SiteFooterProps = {
 export function SiteFooter({ brand, year, location }: SiteFooterProps) {
   return (
     <footer className="site-footer">
-      <p>{brand}®</p>
-      <p>{location}</p>
+      <p>{brand} / {year}</p>
+      <p>Built in {location}</p>
       <a href="#top">Back to top ↑</a>
-      <p>© {year}</p>
+      <p>© {year} Kuzey Görgülü</p>
     </footer>
   )
 }
-

@@ -20,8 +20,15 @@ export function usePointerField<T extends HTMLElement>(): RefObject<T | null> {
         const x = ((event.clientX - bounds.left) / bounds.width) * 100
         const y = ((event.clientY - bounds.top) / bounds.height) * 100
 
-        element.style.setProperty('--pointer-x', `${x.toFixed(2)}%`)
-        element.style.setProperty('--pointer-y', `${y.toFixed(2)}%`)
+        const shiftX = ((x - 50) * 0.09).toFixed(2)
+        const shiftY = ((y - 50) * 0.065).toFixed(2)
+
+        element.style.cssText = [
+          `--pointer-x: ${x.toFixed(2)}%`,
+          `--pointer-y: ${y.toFixed(2)}%`,
+          `--q-shift-x: ${shiftX}px`,
+          `--q-shift-y: ${shiftY}px`,
+        ].join(';')
       })
     }
 

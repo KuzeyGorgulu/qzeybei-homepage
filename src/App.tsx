@@ -3,8 +3,11 @@ import { Hero } from './components/Hero'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { siteContent } from './content/site'
+import { useScrollReveal } from './hooks/useScrollReveal'
 
 export default function App() {
+  useScrollReveal()
+
   return (
     <>
       <a className="skip-link" href="#content">Skip to content</a>
@@ -14,10 +17,14 @@ export default function App() {
         person={siteContent.person}
         tagline={siteContent.tagline}
         year={siteContent.year}
+        heroContext={siteContent.heroContext}
       />
       <FutureSections
+        projects={siteContent.projects}
         currently={siteContent.currently}
-        futureProjects={siteContent.futureProjects}
+        about={siteContent.about}
+        experiments={siteContent.experiments}
+        contact={siteContent.contact}
         socialLinks={siteContent.socialLinks}
         person={siteContent.person}
       />
@@ -29,4 +36,3 @@ export default function App() {
     </>
   )
 }
-
